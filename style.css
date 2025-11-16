@@ -50,7 +50,7 @@ body {
     margin-bottom: 3rem;
 }
 
-/* 1. CABEÇALHO (HEADER) */
+/* 1. CABEÇALHO (HEADER) - Base para Telas Grandes */
 .header {
     background-color: rgba(18, 18, 18, 0.95);
     position: fixed;
@@ -98,7 +98,7 @@ body {
 }
 
 
-/* 2. SEÇÃO HERO */
+/* 2. SEÇÃO HERO - Base para Telas Grandes */
 .hero {
     height: 100vh;
     display: flex;
@@ -204,8 +204,9 @@ section {
 }
 
 .projects-grid {
+    /* Ajuste para telas grandes/médias */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 3rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -289,9 +290,108 @@ section {
     margin-left: 5px;
 }
 
-/* Configuração de responsividade básica */
-@media (max-width: 400px) {
+/* ======================================= */
+/* MEDIA QUERIES (RESPONSIVIDADE)*/
+/* ======================================= */
+
+
+/* 💻 Notebooks e Telas Médias (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .skill-item i {
+        font-size: 4rem; /* Reduz o tamanho dos ícones */
+    }
+}
+
+/* 📱 Tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /* Reduz o padding das seções */
+    section {
+        padding: 4rem 5%; 
+    }
+
+    /* Header: Links em linha, mas com menos margem */
+    .nav-links a {
+        margin-left: 15px;
+        padding: 0.5rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Hero */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    /* Habilidades */
+    .skills-grid {
+        gap: 2rem;
+    }
+    .skill-item i {
+        font-size: 3.5rem;
+    }
+    
+    /* Projetos: Permite cards um pouco menores */
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+
+/* 📱 Celulares e Telas Pequenas (max-width: 576px) */
+@media (max-width: 576px) {
+    
+    /* Header: Flex-wrap para quebra de linha em duas linhas */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 5%;
+        position: relative; /* Opcional: remover fixed para telas pequenas */
+    }
+
+    .nav-links {
+        margin-top: 0.5rem;
+        display: flex;
+        flex-wrap: wrap; /* Permite que os links quebrem se necessário */
+    }
+
+    .nav-links a {
+        margin-left: 5px; /* Menor margem entre os links */
+        padding: 0.5rem 0.3rem;
+    }
+    
+    /* Hero */
+    .hero {
+        height: auto; /* Não precisa ser 100vh em celular */
+        padding-top: 10rem;
+        padding-bottom: 5rem;
+    }
+    .hero-content h1 {
+        font-size: 1.8rem;
+    }
+    .hero-content h2 {
+        font-size: 1.1rem;
+    }
+    
+    /* Habilidades */
+    .skill-item {
+        width: 45%; /* Força 2 ícones por linha */
+        margin-bottom: 1rem;
+    }
+    .skill-item i {
+        font-size: 3rem;
+    }
+    
+    /* Projetos */
+    .projects-grid {
+        grid-template-columns: 1fr; /* Força 1 card por linha */
+        gap: 2rem;
     }
 }
