@@ -1,0 +1,42 @@
+# 🚀 Portfólio Pessoal - Kauã Silva
+
+Bem-vindo ao repositório do meu portfólio pessoal! Este projeto foi desenvolvido para demonstrar minhas habilidades e experiência como Desenvolvedor Full-Stack, com foco em desenvolvimento web moderno, performance e código limpo.
+
+[Link para o Portfólio Online: https://seu-portfolio-url.com]
+
+---
+
+## ✨ Visão Geral e Objetivo
+
+Este portfólio é a minha vitrine digital. Ele é projetado com um visual moderno e de alto contraste (Preto, Azul e Branco) e apresenta uma navegação suave e intuitiva para que recrutadores e outros desenvolvedores possam conhecer meus projetos e minha trajetória de forma eficiente.
+
+O conteúdo é estruturado para ser **direto e técnico**, destacando minha proficiência nas principais tecnologias do mercado.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído puramente com as tecnologias fundamentais do desenvolvimento web, demonstrando a solidez na minha base técnica:
+
+**Linguagens de Marcação e Estilo:**
+* **HTML5:** Estrutura semântica e acessível.
+* **CSS3:** Estilização, layout responsivo (Grid/Flexbox) e criação de animações e efeitos visuais (`glow` azul) para um design dinâmico.
+
+**Desenvolvimento:**
+* **JavaScript (JS):** Base para interatividade futura (como o *smooth scrolling* atual e possíveis animações avançadas).
+
+**Habilidades Chave (Demonstradas nos projetos listados):**
+* **React:** Construção de interfaces de usuário escaláveis.
+* **Node.js:** Desenvolvimento de APIs RESTful e lógica de Back-End.
+* **SQL:** Modelagem e manipulação de dados relacionais.
+
+---
+
+## 🏗️ Estrutura do Projeto
+
+O portfólio é dividido nas seguintes seções principais:
+
+* **Início (Hero):** Apresentação inicial e chamada para ação.
+* **Sobre Mim (About):** Seção técnica e direta sobre minha experiência e foco profissional.
+* **Habilidades (Skills):** Exposição visual das minhas principais ferramentas (com ícones Font Awesome).
+* **Projetos (Projects):** Cards de destaque que detalham meus trabalhos mais relevantes, com links diretos para os projetos (GitHub).
